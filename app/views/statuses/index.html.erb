@@ -1,7 +1,7 @@
 <div class="page-header">
 <h1>Todos los Status</h1>
 </div>
-
+<%= link_to 'Nuevo Status', new_status_path, class: "btn btn-primary dropdown-toggle" %>
     <% @statuses.each do |status| %>
       <div class="status">
         <strong><%= status.name %></strong>
@@ -22,4 +22,4 @@
 
 <br>
 
-<%= link_to 'Nuevo Status', new_status_path %>
+
